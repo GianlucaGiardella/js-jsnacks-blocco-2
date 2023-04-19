@@ -1,11 +1,12 @@
-// Crea un array vuoto. OK
-// Chiedi per 6 volte all’utente di inserire un numero, OK
-// se è dispari inseriscilo nell’array. OK
+// 1) snack 1.5:
+// Crea un array vuoto.
+// Chiedi per 6 volte all’utente di inserire un numero,
+// se è dispari inseriscilo nell’array.
 
 const OddNumbers = [];
 
 for (let i = 0; i < 6; i++) {
-    let newNumber = parseInt(prompt(`Richiesta n.${i}, inserisci un numero:`));
+    const newNumber = parseInt(prompt(`Richiesta n.${i}, inserisci un numero:`));
     if (newNumber % 2 != 0) {
         OddNumbers.push(newNumber);
     }
